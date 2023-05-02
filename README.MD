@@ -24,10 +24,11 @@ To get started with this project, you will need to have the following installed 
 
 To build and run the project, follow these steps:
 
-* Clone the repository: `git clone https://github.com/diegoandcontroll/jwt-spring.git`
+* Clone the repository: `git clone https://github.com/diegoandcontroll/confirmation-email-spring.git`
 * Navigate to the project directory: cd spring-boot-security-jwt
 * Add database "jwt_security" to postgres 
 * Build the project: mvn clean install
+* Run SMTP Server with docker docker run -p 1080:1080 -p 1025:1025 maildev/maildev
 * Run the project: docker-compose up -d && mvn spring-boot:run 
 
 -> The application will be available at http://localhost:8080.
