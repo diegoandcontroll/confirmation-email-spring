@@ -1,0 +1,13 @@
+version: '2.0'
+services:
+  springdb:
+    container_name: springdb
+    image: 'postgres:13'
+    environment:
+      POSTGRES_PASSWORD: spring
+      POSTGRES_USER: spring
+      POSTGRES_DB: spring
+    volumes:
+      - ./data_pg:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
